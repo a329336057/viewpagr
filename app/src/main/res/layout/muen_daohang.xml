@@ -13,5 +13,5 @@
     <item
         android:id="@+id/btm_nav_item3"
         android:icon="@android:drawable/ic_dialog_alert"
-        android:title="菜单项2" />
+        android:title="菜单项3" />
 </menu>

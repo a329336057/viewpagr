@@ -17,7 +17,8 @@ public class MainActivity extends AppCompatActivity {
     BottomNavigationView bottomNavView;
     MainActivityViewPagerAdapter adapter;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void 
+    onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mainActivityViewPager = (ViewPager) findViewById(R.id.main_viewpager);
