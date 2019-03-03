@@ -11,6 +11,7 @@ import com.example.administrator.imagetest.Adatpter.MainActivityViewPagerAdapter
 import com.example.administrator.imagetest.fragment.fragment1;
 import com.example.administrator.imagetest.fragment.fragment2;
 import com.example.administrator.imagetest.fragment.fragment3;
+import com.example.administrator.imagetest.fragment.fragment4;
 
 public class MainActivity extends AppCompatActivity {
     ViewPager mainActivityViewPager;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFragment(new fragment1());
         adapter.addFragment(new fragment2());
         adapter.addFragment(new fragment3());
+        adapter.addFragment(new fragment4());
         mainActivityViewPager.setAdapter(adapter);
 //        为 BottomNavigationView 的菜单项  设置监听事件
         bottomNavView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -44,7 +46,9 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.btm_nav_item3:
                         mainActivityViewPager.setCurrentItem(2);
                         break;
-
+                    case R.id.btm_nav_item4:
+                        mainActivityViewPager.setCurrentItem(3);
+                        break;
 
                 }
                 // true 会显示这个Item被选中的效果 false 则不会

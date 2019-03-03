@@ -26,6 +26,7 @@ public class fragment1 extends Fragment implements AdapterView.OnItemClickListen
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v=inflater.inflate(R.layout.news, container, false);
+        list=new ArrayList<PersionInfo>();
         inint(v);       
         return v;
         
@@ -54,7 +55,7 @@ public class fragment1 extends Fragment implements AdapterView.OnItemClickListen
                 list.get(i).setChick(false);
             }
         }
-        
+        fenleiAdapter.notifyDataSetChanged();
     }
     
     
