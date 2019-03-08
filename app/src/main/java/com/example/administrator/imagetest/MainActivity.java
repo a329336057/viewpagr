@@ -1,12 +1,14 @@
 package com.example.administrator.imagetest;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
-
+import com.example.administrator.imagetest.R;
 import com.example.administrator.imagetest.Adatpter.MainActivityViewPagerAdapter;
 import com.example.administrator.imagetest.fragment.fragment1;
 import com.example.administrator.imagetest.fragment.fragment2;
@@ -29,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFragment(new fragment2());
         adapter.addFragment(new fragment3());
         adapter.addFragment(new fragment4());
+
+
         mainActivityViewPager.setAdapter(adapter);
 //        为 BottomNavigationView 的菜单项  设置监听事件
         bottomNavView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -55,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+        SharedPreferences sharedPreferences = getSharedPreferences("wujay", Context.MODE_PRIVATE);
 //        为 ViewPager 设置监听事件
         mainActivityViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override

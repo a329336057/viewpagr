@@ -4,6 +4,9 @@
     android:layout_height="match_parent">
         <TextView
             android:id="@+id/fl"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="60dp"
+            android:textSize="16dp"
+            android:text="你好啊"/>
 </LinearLayout>
